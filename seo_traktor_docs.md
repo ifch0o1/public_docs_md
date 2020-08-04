@@ -6,7 +6,7 @@ The API explantation and usages.
 
 ### Authentication (API Keys)
 Всеки рекуест трябва да садържа `api_token` който е с дължина 32. <br>
-Пример: `GET SITE/api/v1/keywords {api_token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX, ...}`
+Пример: `GET SITE/api/v1/keywords {api_token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX, ...}` <br> <br>
 <b> Параметри на рекуеста </b> <br>
 
 #### Keywords
