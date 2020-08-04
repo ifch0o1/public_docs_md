@@ -1,4 +1,4 @@
-# SEO tracktor
+# SEO traktor
 
 ## API Documentation
 
