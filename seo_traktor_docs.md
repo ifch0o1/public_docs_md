@@ -110,8 +110,6 @@ $seo->markPostsAsTaken([189, 190, 193, 197, ...]);
 
 <b>Advanced usage with options (our service can provide statistics / ranking data and or another features in the future)</b>
 ````
-// Mark the posts as taken in our databse. list only the ids of the posts you have taken in an array.
-
 $seo->markPostsAsTaken([
   ['id' => 189, 'publish_date' => '2020-08-12 13:32:39'],
   ['id' => 190, 'publish_date' => '2020-08-13 15:35:11'],
