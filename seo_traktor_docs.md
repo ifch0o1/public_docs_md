@@ -97,3 +97,24 @@ $all_posts = $seo->getPosts(true); // All posts (approved and not approved)
 'searched_for_bottom_suggestions'
 'searched_for_related_kws'
 ````
+
+#### Make posts as taken
+When an post is taken (when is saved in your database), You must make it as taken. So this post will not be returned by the API again. You need to do that bacause in the future the API can return new freshly created posts for you. So you don't need to see the posts that you already have taken.
+
+<b>Simple usage - without future statistics</b>
+````
+// Mark the posts as taken in our databse. list only the ids of the posts you have taken in an array.
+
+$seo->markPostsAsTaken([189, 190, 193, 197, ...]);
+````
+
+<b>Advanced usage with options (our service can provide statistics / ranking data and or another features in the future)</b>
+````
+// Mark the posts as taken in our databse. list only the ids of the posts you have taken in an array.
+
+$seo->markPostsAsTaken([
+  ['id' => 189, 'publish_date' => '2020-08-12 13:32:39'],
+  ['id' => 190, 'publish_date' => '2020-08-13 15:35:11'],
+  ...
+]);
+````
