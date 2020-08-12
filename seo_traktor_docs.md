@@ -111,8 +111,8 @@ $seo->markPostsAsTaken([189, 190, 193, 197, ...]);
 ##### Advanced usage with options (our service can provide statistics / ranking data and or another features in the future)</b>
 ````
 $seo->markPostsAsTaken([
-  ['id' => 189, 'publish_date' => '2020-08-12 13:32:39'],
-  ['id' => 190, 'publish_date' => '2020-08-13 15:35:11'],
+  ['id' => 189, 'publish_date' => '2020-08-12 13:32:39', 'publish_url' => $postUrl],
+  ['id' => 190, 'publish_date' => '2020-08-13 15:35:11', 'publish_url' => $secondUrl],
   ...
 ]);
 ````
